@@ -1,0 +1,156 @@
+/* Alles heeft een margin en padding van 0 gekregen, nu worden de randen geraakt. */
+
+body,
+ul,
+img {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* De header is nu de eerste flex container. */
+
+header {
+    align-items: center;
+    display: flex;
+    padding: .5em;
+    background-color: #3e3739;
+}
+
+/* De flex-items blijven even breed en flexible. */
+
+#logo,
+nav {
+    flex: 1;
+}
+
+/* De nav ul is nu de tweede flex container. */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0em;
+}
+
+/* We halen de list-style weg zodat we alleen het nodige nog zien. */
+
+nav li {
+    list-style: none;
+}
+
+nav ul li a img {
+    width: 5em;
+    height: 3em;
+
+}
+
+/* Knop naar een random kort verhaal die je nog niet gezien hebt */
+
+/*-----------------------------------------------------------*/
+
+#snelZoeken{
+    padding: 1.5em;
+    background-color: #ebebec;
+}
+
+section button {
+    margin: auto;
+    width: 100%;
+    background-color: #ffffff;
+    color: #00477F;
+}
+
+section button img {
+    width: 3em
+}
+
+
+/* Main form. */
+
+/*-----------------------------------------------------------*/
+
+/* Achtergrond. */
+
+main {
+    background-color: white;
+    color: #00477F;
+}
+
+/* De kopgrootte aanpassen. */
+
+main h1 {
+    margin: 1em;
+    font-size: 1.3em;
+}
+
+/* De legends alleen visible houden voor screenreaders. */
+
+legend {
+    visibility: hidden;
+}
+
+/* De style compleet weghalen van de fieldsets. */
+
+fieldset {
+    border: none;
+    margin: 0em;
+    padding: 0em 1em;
+}
+
+/* Grootte en ruimte van de p's. */
+
+fieldset p {
+    margin-top: 0em;
+    font-size: 1.3em
+}
+
+/* De fieldsets leesbaarheid en genre moeten nog niet te zien zijn als je de website opent. */
+
+#leesbaarheid {
+    display: none;
+}
+
+#genre {
+    display: none;
+}
+
+/* Alle populairste items. */
+
+/*-----------------------------------------------------------*/
+
+#populair {
+    background-color: #00477F;
+    width: 100%;
+}
+
+#populair h2 {
+    color: white;
+    padding: 1em
+}
+
+
+
+/* Test
+span {
+    background-color: aquamarine;
+    color: blue;
+
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+article {
+    background: purple;
+    border-radius:
+    position: relative;
+}
+
+article img {
+    width: 100%
+    height: 10em;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: .8rem .8rem 0 0;
+}
+*/
