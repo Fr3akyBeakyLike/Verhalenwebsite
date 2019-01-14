@@ -58,10 +58,6 @@ nav ul li button img {
     padding-left: 3em;
 }
 
-div {
-    background-image: url(media/tekstmobiel.svg);
-}
-
 /* Verhaal opmaak */
 
 img.verhaal {
@@ -76,7 +72,7 @@ img#tekst {
     left: 4em;
 }
 
-#achter {
+div#achter {
     position: fixed;
     left: 0;
     background-image: url(media/backgroundmobile.svg);
@@ -85,7 +81,7 @@ img#tekst {
     background-repeat: no-repeat;
 }
 
-#tekst {
+div#tekst {
     position: fixed;
     left: 0;
     background-image: url(media/tekstmobiel.svg);
@@ -95,7 +91,7 @@ img#tekst {
     background-position: center;
 }
 
-#voor {
+div#voor {
     position: fixed;
     left: 0;
     background-image: url(media/voorgrondmobile.svg);
@@ -108,7 +104,7 @@ img#tekst {
 /* Tablet */
 
 @media screen and (min-width: 767px) {
-    #achter {
+    div#achter {
         position: fixed;
         top: auto;
         left: 0;
@@ -118,7 +114,7 @@ img#tekst {
         background-repeat: no-repeat;
     }
 
-    #tekst {
+    div#tekst {
         position: fixed;
         left: 0;
         background-image: url(media/teksttablet.svg);
@@ -128,7 +124,7 @@ img#tekst {
         background-position: center;
     }
 
-    #voor {
+   div#voor {
         position: fixed;
         left: 0;
         background-image: url(media/voorgrond%20tablet.svg);
@@ -142,7 +138,7 @@ img#tekst {
 /* Desktop */
 
 @media screen and (min-width: 1023px) {
-    #achter {
+    div#achter {
         position: fixed;
         left: 0;
         background-image: url(media/backgrounddesktop.svg);
@@ -151,7 +147,7 @@ img#tekst {
         background-repeat: no-repeat;
     }
 
-    #tekst {
+    div#tekst {
         position: fixed;
         left: 0;
         background-image: url(media/tekst.svg);
@@ -161,7 +157,7 @@ img#tekst {
         background-position: center;
     }
 
-    #voor {
+    div#voor {
         position: fixed;
         left: 0;
         background-image: url(media/voorgronddesktop.svg);
