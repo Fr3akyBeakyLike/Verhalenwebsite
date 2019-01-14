@@ -7,3 +7,5 @@ gepaste reistijd, zo kan hij zowat altijd zijn verhalen aflezen.
 
 De gebruiker kan zijn verhalen downloaden en beoordelen, zo kan hij zijn mening achterlaten en hoeft hij ook niet te veel data
 te verbruiken.
+
+Check het ontwerpdocument voor alle bevindingen.
