@@ -1,0 +1,173 @@
+body html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    padding: .5em;
+    background-color: #3e3739;
+}
+
+/* De flex-items blijven even breed en flexible. */
+
+a#logo,
+nav {
+    flex: 1;
+}
+
+/* De nav ul is nu de tweede flex container. */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2em 0em;
+}
+
+/* We halen de list-style weg zodat we alleen het nodige nog zien. */
+
+nav li {
+    list-style: none;
+}
+
+nav ul li a img {
+    width: 5em;
+    height: 3em;
+}
+
+#profile {
+    width: 5em;
+    height: 2.3em;
+    padding-top: 5px;
+}
+
+#reis {
+    height: 3em;
+    width: 3em;
+}
+
+nav ul li button img {
+    width: 8em;
+    height: 4em;
+    padding-left: 3em;
+}
+
+div {
+    background-image: url(media/tekstmobiel.svg);
+}
+
+/* Verhaal opmaak */
+
+img.verhaal {
+    position: absolute;
+    top: 6.5em;
+    left: 0em;
+}
+
+img#tekst {
+    height: 44em;
+    max-width: 44em;
+    left: 4em;
+}
+
+#achter {
+    position: fixed;
+    left: 0;
+    background-image: url(media/backgroundmobile.svg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#tekst {
+    position: fixed;
+    left: 0;
+    background-image: url(media/tekstmobiel.svg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#voor {
+    position: fixed;
+    left: 0;
+    background-image: url(media/voorgrondmobile.svg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 767px) {
+    #achter {
+        position: fixed;
+        top: auto;
+        left: 0;
+        background-image: url(media/backgroundtablet.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #tekst {
+        position: fixed;
+        left: 0;
+        background-image: url(media/teksttablet.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #voor {
+        position: fixed;
+        left: 0;
+        background-image: url(media/voorgrond%20tablet.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1023px) {
+    #achter {
+        position: fixed;
+        left: 0;
+        background-image: url(media/backgrounddesktop.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #tekst {
+        position: fixed;
+        left: 0;
+        background-image: url(media/tekst.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #voor {
+        position: fixed;
+        left: 0;
+        background-image: url(media/voorgronddesktop.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

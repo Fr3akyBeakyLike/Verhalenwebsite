@@ -35,12 +35,10 @@
 
     <div>
         <section id="snelZoeken">
-            <a href="verhaal.html">
             <button id="snelzoeken">
            <p>Breng mij naar een kort verhaal</p>
            <img src="media/Middel%207.svg" alt="">
        </button>
-        </a>
 
         </section>
 
@@ -48,10 +46,10 @@
             <h1>Zoek een passend verhaal bij jou</h1>
 
             <!-- De form veranderd van fieldset na elke beantwoorde vraag -->
-            <div id="centerform">
+            <div>
                 <form action="">
 
-                    <fieldset>
+                    <fieldset id="genre">
                         <legend>Duratie</legend>
                         <label for="duratie">Hoe lang duurt je reis?</label> <br>
                         <input type="radio" name="duratie" value="0 - 5min."> 0 - 5min.<br>
@@ -60,7 +58,7 @@
                         <input type="submit" value="">
                     </fieldset>
 
-                    <fieldset id="genre">
+                    <fieldset id="centerform">
                         <legend>Genres</legend>
                         <label for="genre">Welke genres wekken je interesse?</label> <br>
                         <input type="checkbox" name="genres" value="0 - 5min."> Biografie <br>
@@ -70,7 +68,7 @@
                         <input type="checkbox" name="genres" value="5 - 10min."> Roman<br>
                         <input type="checkbox" name="genres" value="10 - 30min."> Thriller<br>
                         <input type="checkbox" name="genres" value="10 - 30min."> Young Adult<br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="">
                     </fieldset>
 
                     <fieldset id="leesbaarheid">
@@ -79,13 +77,13 @@
                         <input type="checkbox" name="duratie" value="0 - 5min."> Normaal<br>
                         <input type="checkbox" name="duratie" value="5 - 10min."> Verstrooid<br>
                         <input type="checkbox" name="duratie" value="10 - 30min."> Puzzelend<br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="">
                     </fieldset>
 
                 </form>
             </div>
             <!-- Veranderd als je door de vragen heen gaat -->
-            <p>Stap 1/3</p>
+            <p>Stap 2/3</p>
 
         </main>
     </div>
@@ -262,19 +260,13 @@
             </article>
 
         </section>
-
-        <button class="meerverhalen">
-           <p>Zie meer populaire verhalen</p>
-           <img src="media/Middel%207.svg" alt="">
-       </button>
-
     </section>
 
 
 
-    <!-- Aanbevolen -->
+<!-- Aanbevolen -->
 
-    <section id="aanbevolen">
+<section id="aanbevolen">
 
         <h2>Populaire verhalen</h2>
 
@@ -446,17 +438,11 @@
             </article>
 
         </section>
-
-        <button class="meerverhalen" id="grijs">
-           <p>Zie meer aanbevolen verhalen</p>
-           <img src="media/Middel%207.svg" alt="">
-       </button>
-
     </section>
 
+<script src="js.js"></script>
 
 </body>
 
-<script src="js.js"></script>
 
 </html>
