@@ -17,29 +17,28 @@
                 <li><a href="index.html" id="logo">
             <img src="media/logo.svg" alt=""> </a>
                 </li>
-                <ul>
-                    <li id="zoekbalkspace">
-                        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-                        <form id="zoekbalk" action="">
-                            <input id="zoekbalkinput" type="search">
-                            <div class="fa fa-search">
+                <li>
+                    <ul>
+                        <li id="zoekbalkspace">
+                            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+                            <form id="zoekbalk">
+                                <input id="zoekbalkinput" type="search">
+                                <div class="fa fa-search">
 
-                            </div>
-                        </form>
-                    </li>
-                    <li><a href=""><img id="profile" src="media/profiel.svg" alt="mijn RET"></a></li>
-                </ul>
+                                </div>
+                            </form>
+                        </li>
+                        <li><a href="" class="profile"></a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
     <div>
         <section id="snelZoeken">
-            <a href="verhaal.html">
-            <button id="snelzoeken">
-           <p>Breng mij naar een kort verhaal</p>
-           <img src="media/Middel%207.svg" alt="">
-       </button>
+            <a href="verhaal.html" id="Snelzoeken"> Breng mij naar een kort verhaal
+           <img src="media/Middel%207.svg" alt="" id="snelzoeken">
         </a>
 
         </section>
@@ -49,11 +48,11 @@
 
             <!-- De form veranderd van fieldset na elke beantwoorde vraag -->
             <div id="centerform">
-                <form action="">
+                <form>
 
                     <fieldset>
                         <legend>Duratie</legend>
-                        <label for="duratie">Hoe lang duurt je reis?</label> <br>
+                        <label>Hoe lang duurt je reis?</label> <br>
                         <input type="radio" name="duratie" value="0 - 5min."> 0 - 5min.<br>
                         <input type="radio" name="duratie" value="5 - 10min."> 5 - 10min.<br>
                         <input type="radio" name="duratie" value="10 - 30min."> 10 - 30min.
@@ -62,7 +61,7 @@
 
                     <fieldset id="genre">
                         <legend>Genres</legend>
-                        <label for="genre">Welke genres wekken je interesse?</label> <br>
+                        <label>Welke genres wekken je interesse?</label> <br>
                         <input type="checkbox" name="genres" value="0 - 5min."> Biografie <br>
                         <input type="checkbox" name="genres" value="5 - 10min."> Detective<br>
                         <input type="checkbox" name="genres" value="10 - 30min."> Horror<br>
@@ -75,7 +74,7 @@
 
                     <fieldset id="leesbaarheid">
                         <legend>Leesbaarheid</legend>
-                        <label for="leesbaarheid">Hoe goed leesbaar mag de tekst zijn?</label> <br>
+                        <label>Hoe goed leesbaar mag de tekst zijn?</label> <br>
                         <input type="checkbox" name="duratie" value="0 - 5min."> Normaal<br>
                         <input type="checkbox" name="duratie" value="5 - 10min."> Verstrooid<br>
                         <input type="checkbox" name="duratie" value="10 - 30min."> Puzzelend<br>
@@ -95,7 +94,7 @@
         <h2>Populaire verhalen</h2>
 
         <!-- Preview beroemd -->
-        <section id="articles">
+        <section class="articles">
 
             <a href="verhaal.html">
                 <article>
@@ -263,8 +262,7 @@
 
         </section>
 
-        <button class="meerverhalen">
-           <p>Zie meer populaire verhalen</p>
+        <button class="meerverhalen"> Zie meer populaire verhalen
            <img src="media/Middel%207.svg" alt="">
        </button>
 
@@ -279,7 +277,7 @@
         <h2>Aanbevolen verhalen</h2>
 
         <!-- Preview beroemd -->
-        <section id="articles">
+        <section class="articles">
 
             <a href="verhaal.html">
                 <article>
@@ -447,16 +445,14 @@
 
         </section>
 
-        <button class="meerverhalen" id="grijs">
-           <p>Zie meer aanbevolen verhalen</p>
+        <button class="meerverhalen" id="grijs"> Zie meer aanbevolen verhalen
            <img src="media/Middel%207.svg" alt="">
        </button>
 
     </section>
 
+<script src="js.js"></script>
 
 </body>
-
-<script src="js.js"></script>
 
 </html>
