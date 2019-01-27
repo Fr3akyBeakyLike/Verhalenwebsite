@@ -13,6 +13,8 @@ header {
     display: flex;
     padding: .5em;
     background-color: #3e3739;
+    display: block;
+    width: 100%;
 }
 
 /* De flex-items blijven even breed en flexible. */
@@ -67,9 +69,10 @@ img.verhaal {
 }
 
 img#tekst {
-    height: 44em;
-    max-width: 44em;
-    left: 4em;
+    width: 100%;
+    position: absolute;
+    background-image: url(media/tekstmobiel.svg);
+
 }
 
 div#achter {
@@ -82,10 +85,11 @@ div#achter {
 }
 
 div#tekst {
-    position: fixed;
+    position: absolute;
+    top: 20em;
     left: 0;
     background-image: url(media/tekstmobiel.svg);
-    height: 100%;
+    height: 180%;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;

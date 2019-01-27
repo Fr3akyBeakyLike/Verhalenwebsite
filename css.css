@@ -12,6 +12,12 @@
       font-family: sans-serif;
   }
 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
   /* De header is nu de eerste flex container. */
 
@@ -48,16 +54,20 @@
       height: 3em;
   }
 
-  #profile {
-      width: 5em;
-      height: 2.3em;
-      padding-top: 5px;
+  ul li a.profile {
+      background-image: url(media/profile.svg);
+      display: block;
+      width: 3em;
+      height: 3em;
+      background-repeat: no-repeat;
   }
 
-  nav ul li button img {
-      width: 8em;
-      height: 4em;
-      padding-left: 3em;
+.profileclick {
+      background-image: url(media/profilelike.svg);
+      display: block;
+      width: 3em;
+      height: 3em;
+      background-repeat: no-repeat;
   }
 
   /* Zoekbalk style / animatie */
@@ -135,6 +145,21 @@
   section#snelZoeken {
       padding: 1.5em;
       background-color: #ebebec;
+  }
+
+  section a#Snelzoeken {
+      height: 2em;
+      background-color: white;
+      margin-right: auto;
+      font-size: 1em;
+      padding: 1em;
+      display: flex;
+      padding-top: 1.6em
+  }
+
+  section a img#snelzoeken {
+      height: 1.2em;
+      padding-left: 1.5em;
   }
 
   section button {
@@ -238,11 +263,14 @@
       padding: 1em;
   }
 
-  article {
+  section.articles {
+      display: flex;
+      flex-wrap: wrap;
+  }
 
-      margin-left: 1.5em;
-      margin-right: 1.5em;
-      max-width: 24em;
+  article {
+      margin-left: auto;
+      margin-right: auto;
 
       background: white;
       padding: 0;
@@ -345,7 +373,7 @@
       }
 
       main h1 {
-          margin-left: 25%;
+          margin-left: 8.8em;
       }
 
       main p {
@@ -353,12 +381,6 @@
       }
 
       /* Articles flexboxen */
-      #articles {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-      }
-
       button.meerverhalen {
           width: 24em;
           display: block;
@@ -366,9 +388,11 @@
           color: #00477F;
           font-size: 1em;
           display: flex;
+          padding: 1em;
           margin-top: 2em;
           margin-bottom: 2em;
       }
+
   }
 
   /* Responsive Desktop */
@@ -389,9 +413,12 @@
       }
 
       article {
-          max-width: 19.56em;
+          max-width: 25em;
       }
 
+      main h1 {
+          margin-left: 8em;
+      }
   }
 
 
