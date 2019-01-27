@@ -12,11 +12,22 @@ for (i = 0; i < divArray.length; i++ ) {
     divArray[i].classList.add('like')
 }
 
+for (i = 0; i < divArray.length; i++ ) {
+    divArray[i].classList.add('profile')
+}
+
 function veranderClass() {
     this.classList.toggle('like');
     this.classList.toggle('likeclick');
 }
 
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].addEventListener('click',veranderClass);
+function veranderClassprofile() {
+    this.classList.toggle('profile');
+    this.classList.toggle('profileclick');
 }
+
+for (i = 0; i < divArray.length; i++ ) {
+    divArray[i].addEventListener('click',veranderClass, veranderClassprofile);
+}
+
+//---------------------------------------------------------
