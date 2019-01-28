@@ -6,28 +6,85 @@
 
 console.log("test");
 
-var divArray = document.getElementsByClassName('like');
 
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].classList.add('like')
+//TEST---------------------------------------------------------
+
+//var like = document.getElementsByClassName('like');
+//
+//for (var i = 0; i < like.length; i++) {
+//    like[i].addEventListener("click", toggleclass);
+//}
+//
+//function toggleclass(){
+//    if(this.classList.contains('like')){
+//        this.classList.remove('like');
+//        profile[0].remove('profile');
+//    }
+//    else{
+//        this.classList.add('like');
+//        profile[0].add('profile');
+//    }
+//}
+
+
+//TEST---------------------------------------------------------
+
+//Variabelen creeëren behorend bij de classes
+var like = document.getElementsByClassName('like');
+var profile = document.getElementsByClassName('profile');
+
+//Loop creeëren die ervoor zorgt dat de function wordt uitgevoerd
+for (var i = 0; i < like.length; i++) {
+    like[i].addEventListener("click", toggleclass);
 }
 
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].classList.add('profile')
+//for (var i = 0; i < profile.length; i++) {
+//    profile[i].addEventListener("click", toggleclassprofile);
+//}
+
+////Function voor togglen van like background img / class
+//function toggleclass(){
+//    if(this.classList.contains('like')){
+//        this.classList.remove('like');
+//    }
+//    else{
+//        this.classList.add('like');
+//    }
+//}
+//
+////Function voor togglen van profile background img / class
+//function toggleclassprofile(){
+//    if(this.classList.contains('profile')){
+//        this.classList.remove('profile');
+//    }
+//    else{
+//        this.classList.add('profile');
+//    }
+//}
+
+function toggleclass(){
+    if(this.classList.contains('like')){
+        this.classList.remove('like');
+        profile[0].remove('profile');
+    }
+    else{
+        this.classList.add('like');
+        profile[0].add('profile');
+    }
 }
 
-function veranderClass() {
-    this.classList.toggle('like');
-    this.classList.toggle('likeclick');
-}
 
-function veranderClassprofile() {
-    this.classList.toggle('profile');
-    this.classList.toggle('profileclick');
-}
 
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].addEventListener('click',veranderClass, veranderClassprofile);
-}
+//Test-----------------------------------------------------
 
-//---------------------------------------------------------
+//function toggleclass(){
+//    if(this.classList.contains('like','profile')){
+//        this.classList.remove('like');
+//        this.classList.remove('profile');
+//    }
+//    else{
+//        this.classList.add('like');
+//        this.classList.add('profile');
+//    }
+//}
+

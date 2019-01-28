@@ -12,12 +12,12 @@
       font-family: sans-serif;
   }
 
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+  body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }
 
   /* De header is nu de eerste flex container. */
 
@@ -25,6 +25,8 @@ body {
       align-items: center;
       display: flex;
       padding: .5em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
       background-color: #3e3739;
   }
 
@@ -35,12 +37,23 @@ body {
       flex: 1;
   }
 
+  a#logo {
+      padding-left: 0;
+  }
+
   /* De nav ul is nu de tweede flex container. */
 
   nav ul {
       display: flex;
       justify-content: space-around;
       padding: 0.2em 0em;
+  }
+
+  nav ul ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0.2em 0em;
+      padding-left: 6.3em;
   }
 
   /* We halen de list-style weg zodat we alleen het nodige nog zien. */
@@ -62,7 +75,7 @@ body {
       background-repeat: no-repeat;
   }
 
-.profileclick {
+  .profileclick {
       background-image: url(media/profilelike.svg);
       display: block;
       width: 3em;
@@ -154,7 +167,7 @@ body {
       font-size: 1em;
       padding: 1em;
       display: flex;
-      padding-top: 1.6em
+      padding-top: 1.6em;
   }
 
   section a img#snelzoeken {
@@ -393,6 +406,15 @@ body {
           margin-bottom: 2em;
       }
 
+      /* Nav uitlijnen aan de top */
+      nav ul ul {
+          padding-left: 31em;
+      }
+
+      article {
+          max-width: 22em;
+      }
+
   }
 
   /* Responsive Desktop */
@@ -413,11 +435,16 @@ body {
       }
 
       article {
-          max-width: 25em;
+          max-width: 20.5em;
       }
 
       main h1 {
           margin-left: 8em;
+      }
+
+      /* Nav uitlijnen aan de top */
+      nav ul ul {
+          padding-left: 70em;
       }
   }
 
