@@ -6,28 +6,17 @@
 
 console.log("test");
 
-var divArray = document.getElementsByClassName('like');
+var likeButton = document.getElementsByClassName('like');
 
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].classList.add('like')
+for (var i = 0; i < likeButton.length; i++) {
+    likeButton[i].addEventListener('click', toggleLike);
 }
 
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].classList.add('profile')
+function toggleLike() {
+    if (this.classList.contains("likeclick")) {
+        this.className = "like";
+    } else {
+        this.className = "likeclick";
+    }
+    document.getElementById("profile").className = "profileclick";
 }
-
-function veranderClass() {
-    this.classList.toggle('like');
-    this.classList.toggle('likeclick');
-}
-
-function veranderClassprofile() {
-    this.classList.toggle('profile');
-    this.classList.toggle('profileclick');
-}
-
-for (i = 0; i < divArray.length; i++ ) {
-    divArray[i].addEventListener('click',veranderClass, veranderClassprofile);
-}
-
-//---------------------------------------------------------
