@@ -368,7 +368,7 @@
 
   /* Responsive Tablet */
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 47.938em) {
 
       /* Snel zoeken knop, staat nu in het midden */
       section button#snelzoeken {
@@ -418,7 +418,7 @@
 
   /* Responsive Desktop */
 
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 63.938em) {
 
       section#snelZoeken {
           width: 50%;
